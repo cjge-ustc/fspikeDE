@@ -1,0 +1,39 @@
+==================================================
+Hyper Parameters:
+--------------------------------------------------
+{'batch_size': 32,
+ 'beta': 0.5,
+ 'dataset': 'cora',
+ 'device': 'cuda:0',
+ 'dropout': 0.0,
+ 'epochs': 100,
+ 'integrator_indicator': 'odeint_adjoint',
+ 'integrator_method': 'euler',
+ 'learning_rate': 0.001,
+ 'model': 'spikede',
+ 'output_dir': 'outputs',
+ 'positional_dim': 16,
+ 'positional_method': 'random_walk',
+ 'split': [0.7, 0.2, 0.1],
+ 'task': 'SGCN',
+ 'tau': 2.0,
+ 'tau_learnable': True,
+ 'threshold': 1.0,
+ 'time_steps': 100}
+==================================================
+
+==================================================
+Test Results:
+--------------------------------------------------
+Noise                        Accuracy (%)
+--------------------------------------------------
+mean=0.00, std=0.00            87.69 ± 0.38
+mean=0.00, std=0.05            69.37%
+mean=0.00, std=0.10            43.17%
+mean=0.00, std=0.20            33.21%
+mean=0.00, std=0.30            32.84%
+mean=0.00, std=0.40            32.84%
+mean=0.00, std=0.50            32.84%
+==================================================
+
+energy consumption: 6.017e-05 mJ, number of parameters: 10.039 K

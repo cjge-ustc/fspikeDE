@@ -1,0 +1,39 @@
+==================================================
+Hyper Parameters:
+--------------------------------------------------
+{'batch_size': 32,
+ 'beta': 0.3,
+ 'dataset': 'cora',
+ 'device': 'cuda:5',
+ 'dropout': 0.0,
+ 'epochs': 100,
+ 'integrator_indicator': 'fdeint_adjoint',
+ 'integrator_method': 'predictor-f',
+ 'learning_rate': 0.001,
+ 'model': 'spikede',
+ 'output_dir': 'outputs',
+ 'positional_dim': 32,
+ 'positional_method': 'random_walk',
+ 'split': [0.7, 0.2, 0.1],
+ 'task': 'DRSGCN',
+ 'tau': 2.0,
+ 'tau_learnable': True,
+ 'threshold': 2.0,
+ 'time_steps': 100}
+==================================================
+
+==================================================
+Test Results:
+--------------------------------------------------
+Noise                        Accuracy (%)
+--------------------------------------------------
+mean=0.00, std=0.00            88.51 ± 0.6252466235309839
+mean=0.00, std=0.05            73.06%
+mean=0.00, std=0.10            50.55%
+mean=0.00, std=0.20            33.95%
+mean=0.00, std=0.30            33.21%
+mean=0.00, std=0.40            32.84%
+mean=0.00, std=0.50            33.21%
+==================================================
+
+energy consumption: 4.106e-05 mJ, number of parameters: 10.264 K

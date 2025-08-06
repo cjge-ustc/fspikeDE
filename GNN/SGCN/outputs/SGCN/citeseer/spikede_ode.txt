@@ -1,0 +1,39 @@
+==================================================
+Hyper Parameters:
+--------------------------------------------------
+{'batch_size': 32,
+ 'beta': 0.5,
+ 'dataset': 'citeseer',
+ 'device': 'cuda:2',
+ 'dropout': 0.0,
+ 'epochs': 100,
+ 'integrator_indicator': 'odeint_adjoint',
+ 'integrator_method': 'euler',
+ 'learning_rate': 0.001,
+ 'model': 'spikede',
+ 'output_dir': 'outputs',
+ 'positional_dim': 16,
+ 'positional_method': 'random_walk',
+ 'split': [0.7, 0.2, 0.1],
+ 'task': 'SGCN',
+ 'tau': 2.0,
+ 'tau_learnable': True,
+ 'threshold': 1.0,
+ 'time_steps': 100}
+==================================================
+
+==================================================
+Test Results:
+--------------------------------------------------
+Noise                        Accuracy (%)
+--------------------------------------------------
+mean=0.00, std=0.00            72.13 ± 0.27
+mean=0.00, std=0.05            48.95%
+mean=0.00, std=0.10            23.42%
+mean=0.00, std=0.20            11.71%
+mean=0.00, std=0.30             9.01%
+mean=0.00, std=0.40             8.41%
+mean=0.00, std=0.50             8.41%
+==================================================
+
+energy consumption: 1.244e-04 mJ, number of parameters: 22.225 K

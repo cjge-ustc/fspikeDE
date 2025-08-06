@@ -1,0 +1,40 @@
+==================================================
+Hyper Parameters:
+--------------------------------------------------
+{'batch_size': 32,
+ 'beta': 0.5,
+ 'dataset': 'cora',
+ 'device': 'cuda:0',
+ 'dropout': 0.6,
+ 'edge_keep_ratio': 1.0,
+ 'epochs': 100,
+ 'integrator_indicator': 'odeint_adjoint',
+ 'integrator_method': 'euler',
+ 'learning_rate': 0.001,
+ 'model': 'spikingjelly',
+ 'output_dir': 'outputs',
+ 'positional_dim': 32,
+ 'positional_method': 'random_walk',
+ 'split': [0.7, 0.2, 0.1],
+ 'task': 'DRSGCN',
+ 'tau': 12.0,
+ 'tau_learnable': False,
+ 'threshold': 1.0,
+ 'time_steps': 100}
+==================================================
+
+==================================================
+Test Results:
+--------------------------------------------------
+Noise                        Accuracy (%)
+--------------------------------------------------
+mean=0.00, std=0.00            82.80 ± 1.42
+mean=0.00, std=0.05            63.47%
+mean=0.00, std=0.10            46.13%
+mean=0.00, std=0.20            27.31%
+mean=0.00, std=0.30            24.35%
+mean=0.00, std=0.40            21.40%
+mean=0.00, std=0.50            17.71%
+==================================================
+
+energy consumption: 1.503e-04 mJ, number of parameters: 10.263 K
