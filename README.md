@@ -5,12 +5,10 @@ These codes implement the methodology proposed in our paper: **Fractional Spike 
 ---
 
 ## 📌 Core Components
-There are four parts of implementations:
+There are two parts of implementations:
 
-1. **DVS128Gesture**  
-2. **MNIST**  
-3. **Spiking Graph Convolutional Neural Networks (SGCN)**  
-4. **MSG_fractional**  
+1. **Spiking Graph Convolutional Neural Networks (SGCN)**  
+2. **MSG_fractional**  
 
 Each component includes dedicated documentation in its subdirectory for execution instructions and experimental configurations.
 
